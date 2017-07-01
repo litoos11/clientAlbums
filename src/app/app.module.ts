@@ -6,11 +6,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
-
+//Albums
 import { AlbumsListComponent } from './components/albums-list.component';
 import { AlbumAddComponent } from './components/album-add.component';
 import { AlbumDetailComponent } from './components/album-detail.component';
 import { AlbumEditComponent } from './components/album-edit.component';
+//Imagen
+import { ImageAddComponent } from './components/image-add.component';
+import { ImageEditComponent } from './components/image-edit.component';
+import { ImageDetailComponent } from './components/image-detail.component';
 
 
 @NgModule({
@@ -19,7 +23,10 @@ import { AlbumEditComponent } from './components/album-edit.component';
     AlbumsListComponent,
     AlbumAddComponent,
     AlbumDetailComponent,
-    AlbumEditComponent
+    AlbumEditComponent,
+    ImageAddComponent,
+    ImageEditComponent,
+    ImageDetailComponent
   ],
   imports: [
     BrowserModule,

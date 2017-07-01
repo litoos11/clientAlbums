@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 import { Album } from '../models/album';
-import { GLOBAL } from '../services/global';
+import { GLOBAL } from './global';
 
 @Injectable()
 export class AlbumService{

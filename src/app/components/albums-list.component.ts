@@ -35,7 +35,7 @@ export class AlbumsListComponent implements OnInit {
     this._albumService.getAlbums().subscribe(
       (response) => {
         this.albums = response.albums;
-        console.log(this.albums)
+        // console.log(this.albums)
         if(!this.albums){
           alert('Error en el servidor :-(')
         }
