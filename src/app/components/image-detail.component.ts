@@ -52,4 +52,34 @@ export class ImageDetailComponent implements OnInit {
       )
     })
   }
+
+  public confirmado: any;
+  onDeleteConfirm(id){
+    this.confirmado = id;
+  }
+
+  onCancelImage(){
+    this.confirmado = null;
+  }
+
+  onDeleteImage(id){
+    this._imageService.deleteImage(id).subscribe(
+      (response) => {
+        if(!response.image){
+          alert('Error en el servidor :-(')
+        }
+        // this.getImage();
+        this._router.navigate(['/album', response.image.album]);
+        this.loading = false;
+      },
+      (error) => {
+        this.errorMessage = <any>error;
+
+        if(this.errorMessage != null){
+          console.log(this.errorMessage);
+        }
+      }
+    )
+  }
+
 }

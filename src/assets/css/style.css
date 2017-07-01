@@ -186,15 +186,16 @@ footer{
 #picture-list .image-item{
   float: left;
   margin: 10px;
-  padding: 0;
+  padding: 5px;
   height: 200px;
   width: 240px;
   list-style: none;
-  border: 1px solid#ccc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 #picture-list .image-item .picture{
-  height: 150px;
+  height: 160px;
   overflow: hidden;
 }
 
@@ -204,16 +205,15 @@ footer{
 
 #picture-list .image-item .title{
   width: 100%;
-  height: 50px;
-  display: block;
+  display: inline-block;
   background: #eee;
   text-align: center;
   color: #444;
-  line-height: 50px;
+  line-height: 30px;
 }
 
 #picture-list .image-item .title a{
-  text-align: none;
+  text-decoration: none;
   color: #444;
 }
 
@@ -224,9 +224,8 @@ footer{
   min-height: 150px;
   margin-top: 20px;
   padding: 20px;
-  background: white;
 }
 
 .image-box .imagen{
-  width: 98%
+  width: 100%;
 }
